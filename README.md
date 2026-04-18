@@ -18,17 +18,17 @@ Built for amateur astronomers, students, and anyone working with photometric tim
 
 ### Installation
 
-```bash
+​```bash
 git clone https://github.com/Ali-Razeghi/lightcurve-analyzer.git
 cd lightcurve-analyzer
 pip install -r requirements.txt
-```
+​```
 
 ### Run with synthetic data (no setup needed)
 
-```bash
+​```bash
 python lightcurve_report.py --generate-synthetic --period 0.57 --name "Synthetic RR Lyrae" --outdir output
-```
+​```
 
 This generates a simulated RR Lyrae light curve with a true period of 0.57 days and produces a full report in the `output/` folder.
 
@@ -36,11 +36,17 @@ This generates a simulated RR Lyrae light curve with a true period of 0.57 days 
 
 Your CSV file should have at least two columns: time (in days) and apparent magnitude.
 
-```bash
+​```bash
 python lightcurve_report.py --input my_data.csv --time-col time --mag-col mag --name "RR Lyrae" --outdir output
-```
+​```
 
-## Output
+## Example Output
+
+Below is a phase-folded light curve generated from synthetic RR Lyrae data with a true period of 0.57 days. The Lomb–Scargle algorithm successfully recovered the period to within 0.001 days:
+
+![Phase-folded light curve of a synthetic RR Lyrae variable star](fig_phase_folded.png)
+
+## Output Files
 
 After running, the output folder contains:
 
