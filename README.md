@@ -44,7 +44,7 @@ python lightcurve_report.py --input my_data.csv --time-col time --mag-col mag --
 
 Below is a phase-folded light curve generated from synthetic RR Lyrae data with a true period of 0.57 days. The Lomb–Scargle algorithm successfully recovered the period to within 0.001 days:
 
-![Phase-folded light curve of a synthetic RR Lyrae variable star](example_output.png)
+![Phase-folded light curve of a synthetic RR Lyrae variable star](fig_phase_folded.png)
 
 ## Output Files
 
